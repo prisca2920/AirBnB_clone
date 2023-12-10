@@ -42,7 +42,15 @@ class TestAmenity(unittest.TestCase):
         """tests if amenity is subclass of basemodel"""
         self.assertTrue(issubclass(self.amenity.__class__, BaseModel), True)
 
-    def test_save_methodself):
+    def test_save_method(self):
         """tests save method"""
         self.amenity.save()
         self.assertNotEqual(self.amenity.created_at, self.amenity.updated_at)
+
+    def test_dict_method(self):
+        """tests dict method"""
+        self.assertEqual('to_dict' in dir(self.amenity), True)
+
+
+if __name__ == "__main__":
+    unittest.main()
