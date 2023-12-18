@@ -11,6 +11,7 @@
 
 .filters button {
     font-size: 18px;
+    position: absolute;
     background-color: #FF5A5F;
     color: #FFFFFF;
     height: 48px;
@@ -23,11 +24,11 @@
 
 .filters button:hover {
     opacity: 90%;
-    cursor: pointer;
 }
 
 .filters .locations {
     height: 100%;
+    position: absolute;
     width: 25%;
     border-right: 1px solid #DDDDDD;
     padding-left: 55px;
@@ -35,6 +36,7 @@
 
 .filters .amenities {
     height: 100%;
+    position: absolute;
     width: 25%;
     padding-left: 55px;
 }
